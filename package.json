@@ -4,7 +4,8 @@
   "description": "lowdb sample for 1.125",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js"
   },
   "author": "candicecjiang@gmail.com",
   "license": "MIT",
