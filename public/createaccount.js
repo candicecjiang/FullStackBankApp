@@ -81,6 +81,7 @@ function CreateAccount(){
       body={
         isLoggedin ?
           (<>
+            <h5>Hello {ctx.users[0].name}</h5>
             Want to create another account?<br/>
             Please log out first.<br/>
             <button type="submit"
@@ -107,9 +108,6 @@ function CreateAccount(){
     return(<>
       <h5>Success</h5>
       <h5>You are now logged in as {name}</h5>
-      <button type="submit" 
-        className="btn btn-light" 
-        onClick={() => props.setShow(true)}>Add another account</button>
     </>);
   }
 }
